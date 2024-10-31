@@ -2,13 +2,13 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "servers.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "server.js",
     "dev": "nodemon server.js"
   },
-  "author": "sangam mukherjee",
+  "author": "nick",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",

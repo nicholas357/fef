@@ -22,6 +22,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import PaypalReturnPage from "./pages/shopping-view/paypal-return";
 import PaymentSuccessPage from "./pages/shopping-view/payment-success";
 import SearchProducts from "./pages/shopping-view/search";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   const { user, isAuthenticated, isLoading } = useSelector(
@@ -38,7 +39,9 @@ function App() {
   console.log(isLoading, user);
 
   return (
-    <div className="flex flex-col overflow-hidden bg-white">
+    <>
+    
+    <div className="flex flex-col overflow-hidden bg-white mx-auto max-w-6xl w-full ">
       <Routes>
         <Route
           path="/"
@@ -93,6 +96,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
+    </>
   );
 }
 
